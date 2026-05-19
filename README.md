@@ -59,17 +59,3 @@ Pull requests are welcome!
 ## 📄 License
 MIT © Your Name
 
-
----
-
-## Why Each Section Matters
-
-| Section | Why Include It |
-|---------|---------------|
-| Live Demo | Employers want to see it running |
-| Screenshots | Visual proof without cloning |
-| Tech Stack | Shows your skills clearly |
-| Standards Used | Proves civil engineering knowledge |
-| Setup Steps | Standard for all projects |
-
----
