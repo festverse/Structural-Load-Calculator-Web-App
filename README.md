@@ -41,7 +41,7 @@ based on **IS 875 standards**, built with React.js.
 ### Installation
 ```bash
 git clone https://github.com/festverse/structural-load-calculator.git
-cd Structural-Load-Calculator-Web-App
+cd structural-load-calculator-web-app
 npm install
 npm start
 ```
