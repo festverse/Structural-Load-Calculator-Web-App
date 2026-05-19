@@ -40,12 +40,13 @@ based on **IS 875 standards**, built with React.js.
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/structural-load-calculator.git
-cd structural-load-calculator
+git clone https://github.com/festverse/structural-load-calculator.git
+cd structural-load-calculator-web-app
 npm install
 npm start
+```
 
-📐 Calculation Standards Used
+## 📐 Calculation Standards Used
 IS 875 Part 1 - Dead Loads
 IS 875 Part 2 - Live Loads
 IS 875 Part 3 - Wind Loads
@@ -53,7 +54,9 @@ IS 456 - Load Factors
 🤝 Contributing
 Pull requests are welcome!
 
-📄 License
+---
+
+## 📄 License
 MIT © Your Name
 
 
