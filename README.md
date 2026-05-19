@@ -56,6 +56,18 @@ Pull requests are welcome!
 
 ---
 
+## 📚 References & Standards Used
+
+| Reference | Details |
+|-----------|---------|
+| IS 875 Part 1 (1987) | Dead Loads — Unit weights of materials |
+| IS 875 Part 2 (1987) | Live Loads — Occupancy based |
+| IS 875 Part 3 (2015) | Wind Loads — Speed and pressure |
+| IS 456 (2000) | Plain & Reinforced Concrete — Load factors |
+| SP 7 (2005) | National Building Code of India |
+
+---
+
 ## 📄 License
-MIT © Your Name
+MIT © Utsav Vasava
 
