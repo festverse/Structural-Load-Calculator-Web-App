@@ -141,3 +141,15 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# React build output
+/build
+
+# React env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Optional: if using Vite instead of CRA
+/dist
