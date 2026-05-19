@@ -1,0 +1,54 @@
+/**
+ * Structural Load Calculations
+ * Based on:
+ * - IS 875 Part 1 (1987) - Dead Loads
+ * - IS 875 Part 2 (1987) - Live Loads
+ * - IS 875 Part 3 (2015) - Wind Loads
+ * - IS 456 (2000) - Load Combinations
+ */
+
+// IS 875 Part 1 — Dead Load
+export const calculateDeadLoad = (thickness, unitWeight = 25) => {
+  return thickness * unitWeight; // kN/m²
+};
+
+// IS 875 Part 2 — Live Load by Occupancy
+export const getLiveLoad = (occupancyType) => {
+  const liveLoads = {
+    residential: 2.0,
+    office: 3.0,
+    commercial: 4.0,
+    industrial: 5.0,
+    storage: 7.5,
+  };
+  return liveLoads[occupancyType] || 2.0;
+};
+
+// IS 875 Part 3 — Wind Load
+export const calculateWindLoad = (Vb, k1, k2, k3, area) => {
+  const Vz = Vb * k1 * k2 * k3;
+  const pz = 0.6 * Math.pow(Vz, 2); // N/m²
+  const pz_kN = pz / 1000;           // Convert to kN/m²
+  return pz_kN * area;               // Total wind load kN
+};
+
+// IS 456 Clause 18.2 — Factored Load Combinations
+export const calculateFactoredLoad = (DL, LL, WL = 0, area) => {
+  const deadTotal = DL * area;
+  const liveTotal = LL * area;
+
+  // Combination 1: 1.5(DL + LL)
+  const combo1 = 1.5 * (deadTotal + liveTotal);
+
+  // Combination 2: 1.2(DL + LL + WL)
+  const combo2 = 1.2 * (deadTotal + liveTotal + WL);
+
+  return {
+    deadTotal,
+    liveTotal,
+    windTotal: WL,
+    combo1,   // Governs without wind
+    combo2,   // Governs with wind
+    governing: Math.max(combo1, combo2),
+  };
+};
