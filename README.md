@@ -1,16 +1,73 @@
-# React + Vite
+# 🏗️ Structural Load Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for calculating structural loads on slabs and beams
+based on **IS 875 standards**, built with React.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
+[Click here to view live app](your-vercel-or-netlify-link)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
+![App Screenshot](./screenshots/app-preview.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+- Calculate Dead Load, Live Load, and Wind Load
+- Supports multiple occupancy types
+- Factored load output per IS 456
+- Visual load breakdown chart
+- Responsive design
+
+---
+
+## 🛠️ Tech Stack
+- React.js
+- Tailwind CSS
+- Recharts
+- Node.js
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js v16+
+- npm or yarn
+
+### Installation
+```bash
+git clone https://github.com/festverse/structural-load-calculator.git
+cd structural-load-calculator-web-app
+npm install
+npm start
+```
+
+## 📐 Calculation Standards Used
+IS 875 Part 1 - Dead Loads
+IS 875 Part 2 - Live Loads
+IS 875 Part 3 - Wind Loads
+IS 456 - Load Factors
+🤝 Contributing
+Pull requests are welcome!
+
+---
+
+## 📚 References & Standards Used
+
+| Reference | Details | Link |
+|-----------|---------|------|
+| IS 875 Part 1 (1987) | Dead Loads | [View PDF](https://law.resource.org/pub/in/bis/S03/is.875.1.1987.pdf) |
+| IS 875 Part 2 (1987) | Live Loads | [View PDF](https://law.resource.org/pub/in/bis/S03/is.875.2.1987.pdf) |
+| IS 875 Part 3 (2015) | Wind Loads — Speed and pressure |
+| IS 456 (2000) | RC Concrete Code | [View PDF](https://law.resource.org/pub/in/bis/S03/is.456.2000.pdf) |
+| SP 7 (2005) | National Building Code of India |
+
+---
+
+## 📄 License
+MIT © Utsav Vasava
+
